@@ -18,6 +18,6 @@ Built a secure, highly available 3-tier web application on AWS with private data
 **Concepts**: Public/Private Subnets, Multi-AZ, IAM Roles
 
 ### 📄 Full Details
-[**📥 Download Project PDF**](https://github.com/sonalrasal85/AWS-3Tier-Ecommerce-Project/raw/main/sonal%20rasal-%20AWS%203-tier%20Ecommerce-project%20(1).pdf)
+[**📥 Download Project PDF**](./sonal%20rasal-%20AWS%203-tier%20Ecommerce-project%20(3)/sonal%20rasal-%20AWS%203-tier%20Ecommerce-project%20(1).pdf)
 
 **Sonal Rasal** | Cloud Engineer
