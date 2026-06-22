@@ -22,16 +22,31 @@ The Application Load Balancer distributes traffic across EC2 instances in public
 1. **Architecture Diagram**: Complete 3-tier setup with public/private subnet separation.
 2. **Security Verification**: Screenshot proving RDS is not publicly accessible.
 3. **End-to-End Testing**: Order placed via ALB URL successfully saved in private RDS database.
-### 📸 Screenshots
+### 📸 Live Project Screenshots - End-to-End Proof
 
-#### 1. Architecture Diagram
-![Architecture](./architecture.png)
+#### 1. ShopEasy Storefront - Public ALB Access
+![ALB Frontend](./alb-frontend.png)
+**Architecture Proof:** Web Tier running on Application Load Balancer. Publicly accessible via ALB DNS. This is the only public entry point.
 
-#### 2. RDS Security Proof - Not Publicly Accessible  
+#### 2. Application Tier Dashboard - Private Subnet  
+![App Dashboard](./app-dashboard.png)
+**Security Proof:** Application server running in **Private Subnet**. `Database Connectivity: Established` confirms secure connection to RDS. `Region: ap-south-1 (Mumbai)` visible.
+
+#### 3. Application Services - Business Logic Layer
+![App Services](./app-services.png)
+**3-Tier Proof:** `Connected to Secure Database Tier` message confirms App Tier successfully communicating with Database Tier through private network only.
+
+#### 4. RDS Security Configuration - Database Tier
 ![RDS Security](./rds-proof.png)
+**Critical Security Proof:** Database instance shows `Publicly Accessible: No`. Confirms RDS is deployed in private subnet with no public IP, following AWS best practices.
 
-#### 3. Live Database Proof - Order Verification
+#### 5. Live Order Verification - Data Flow Test
 ![Order Proof](./order-proof.png)
+**End-to-End Proof:** Order placed from public website was successfully saved in the private RDS database, validating complete 3-tier data flow: Web Tier → App Tier → Database Tier.
+
+#### 6. High-Level Architecture Diagram
+![Architecture](./architecture.png)
+**Design Proof:** Complete 3-tier setup showing VPC, Public/Private Subnets, ALB, EC2 instances, and RDS across 2 Availability Zones for high availability.
 
 ### 📄 Full Details
 [**📥 Download Project PDF**](./sonal%20rasal-%20AWS%203-tier%20Ecommerce-project%20(3)/sonal%20rasal-%20AWS%203-tier%20Ecommerce-project%20(1).pdf)
