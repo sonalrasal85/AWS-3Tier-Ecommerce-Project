@@ -1,23 +1,30 @@
-# AWS 3-Tier E-Commerce Project
+##AWS 3-Tier E-Commerce Architecture with High Availability & Security
 
-Built a secure, highly available 3-tier web application on AWS with private database and load balancer.
+ 📌 Project Overview
+This project demonstrates a production-ready, highly available 3-tier e-commerce architecture on AWS. It implements secure networking, load balancing, auto scaling, and database isolation using core AWS services.
 
-### 🏗️ Architecture
-![Architecture](./WhatsApp%20Image%202026-06-22%20at%205.33.23%20PM.jpeg)
+The Application Load Balancer distributes traffic across EC2 instances in public subnets. The application connects to an RDS MySQL database deployed in private subnets with no public access. Auto Scaling ensures availability while NAT Gateway provides secure outbound internet for private instances.
 
-### 🔐 Key Security Proof
-![RDS Security](./WhatsApp%20Image%202026-06-22%20at%205.33.47%20PM.jpeg)
-**RDS `Publicly Accessible: No`** - Database is in private subnet. No internet access.
+### 🛠️ AWS Services Used
+- **Compute**: Amazon EC2, Auto Scaling Group (ASG)
+- **Networking**: VPC, Public & Private Subnets, Internet Gateway, NAT Gateway, Route Tables
+- **Load Balancing**: Application Load Balancer (ALB), Target Groups
+- **Database**: Amazon RDS for MySQL with Multi-AZ
+- **Security**: Security Groups, IAM Roles, Private Subnets for DB layer
+- **Web Server**: Apache HTTP Server
 
-### ✅ Live Working Proof  
-![Live DB](./WhatsApp%20Image%202026-06-22%20at%205.34.54%20PM.jpeg)
-**Order successfully saved to database** - End-to-end working.
+### 🔐 Key Security Features
+1. **Database Isolation**: RDS instance has `Publicly Accessible: No`. Database is deployed in private subnets only.
+2. **Least Privilege**: Security groups allow traffic only between tiers. Web → App → DB.
+3. **No Direct DB Access**: Database cannot be accessed from the internet, only from the application tier.
 
-### 🛠️ Tech Used
-**AWS**: VPC, EC2, RDS MySQL, Application Load Balancer, NAT Gateway, Security Groups  
-**Concepts**: Public/Private Subnets, Multi-AZ, IAM Roles
+### ✅ Project Implementation & Proof
+1. **Architecture Diagram**: Complete 3-tier setup with public/private subnet separation.
+2. **Security Verification**: Screenshot proving RDS is not publicly accessible.
+3. **End-to-End Testing**: Order placed via ALB URL successfully saved in private RDS database.
 
 ### 📄 Full Details
 [**📥 Download Project PDF**](./sonal%20rasal-%20AWS%203-tier%20Ecommerce-project%20(3)/sonal%20rasal-%20AWS%203-tier%20Ecommerce-project%20(1).pdf)
 
-**Sonal Rasal** | Cloud Engineer
+### 👩‍💻 Author
+**Sonal Subhash Rasal** | AWS Cloud Enthusiast
