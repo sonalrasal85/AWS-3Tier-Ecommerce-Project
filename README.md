@@ -22,7 +22,16 @@ The Application Load Balancer distributes traffic across EC2 instances in public
 1. **Architecture Diagram**: Complete 3-tier setup with public/private subnet separation.
 2. **Security Verification**: Screenshot proving RDS is not publicly accessible.
 3. **End-to-End Testing**: Order placed via ALB URL successfully saved in private RDS database.
+### 📸 Screenshots
 
+#### 1. Architecture Diagram
+![Architecture](./WhatsApp%20Image%202026-06-22%20at%202.03.05%20AM.jpeg)
+
+#### 2. RDS Security Proof - Not Publicly Accessible  
+![RDS Security](./WhatsApp%20Image%202026-06-22%20at%201.17.02%20AM.jpeg)
+
+#### 3. Live Database Proof - Order Verification
+![Order Proof](./WhatsApp%20Image%202026-06-22%20at%201.19.08%20AM.jpeg)
 ### 📄 Full Details
 [**📥 Download Project PDF**](./sonal%20rasal-%20AWS%203-tier%20Ecommerce-project%20(3)/sonal%20rasal-%20AWS%203-tier%20Ecommerce-project%20(1).pdf)
 
