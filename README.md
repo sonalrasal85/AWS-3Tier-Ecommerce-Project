@@ -25,13 +25,14 @@ The Application Load Balancer distributes traffic across EC2 instances in public
 ### 📸 Screenshots
 
 #### 1. Architecture Diagram
-![Architecture](./WhatsApp%20Image%202026-06-22%20at%202.03.05%20AM.jpeg)
+![Architecture](./architecture.png)
 
 #### 2. RDS Security Proof - Not Publicly Accessible  
-![RDS Security](./WhatsApp%20Image%202026-06-22%20at%201.17.02%20AM.jpeg)
+![RDS Security](./rds-proof.png)
 
 #### 3. Live Database Proof - Order Verification
-![Order Proof](./WhatsApp%20Image%202026-06-22%20at%201.19.08%20AM.jpeg)
+![Order Proof](./order-proof.png)
+
 ### 📄 Full Details
 [**📥 Download Project PDF**](./sonal%20rasal-%20AWS%203-tier%20Ecommerce-project%20(3)/sonal%20rasal-%20AWS%203-tier%20Ecommerce-project%20(1).pdf)
 
